@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/346700d304.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/simplelightbox.min.css">
     <link rel="stylesheet" href="css\style.css">
     
 
-    <title>Centralna - najlepszya kawiarnia w lublinie</title>
+    <title>Centralna - najlepsza kawiarnia w lublinie</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/simple-lightbox.js" ></script>
   
@@ -20,6 +20,28 @@
                 const $gallery = $('.gallery a').simpleLightbox();
               });
             </script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+   
+  $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+  $('.scrollup').fadeIn();
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+   
+  $('.scrollup').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+  });
+   
+  });
+  </script>
+
 </head>
 
 <body id="home">
@@ -27,10 +49,8 @@
                 <div class="container">
                   <h1 class="logo">Centralna</h1>
                   <ul class="nav">
-                    
-                    <li><a href="#main">Główna</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li> 
+                    <li><strong><a href="#galeria">Galeria</a></li></strong>
+                    <li><strong><a href="#kontakt">Kontakt</a></li> </strong>
                     <!-- <li><a href="#specs">Specs</a></li>
                               <li><a href="#contact">Contact</a></li> -->
                   </ul>
@@ -49,7 +69,7 @@
                       Schowacie się przed miastem pod palmami. Spotkacie przypadkiem dobrych znajomych.
                      Umówicie się z nią na dziewiątą. Przeczekacie ulewne deszcze, odzyskacie pogodę ducha.
             </p>
-            <a href="#" class="btn">Read More</a>
+           
           </div>
           <img src="img/centralna_logo_czarne_cien.png" alt="" />
         </div>
@@ -105,9 +125,9 @@
             <div class="container">
                <div  itemscope  itemtype =" http://schema.org/LocalBusiness " >
                 <div  itemprop="address"  itemscope itemtype =" http://schema.org/PostalAddress " > 
-                <h2><p itemprop="name" >KONTAKT</p></h2> 
-                <p itemprop="streetAddress" ><strong> Adres:</strong> ul. Peowiaków 12, Lublin, 20-007 (w budynku Centrum Kultury)</p> 
-                <p><span itemprop="addressLocality" ><strong> City:</strong> Lublin</span> </p>
+                <h2><p itemprop="name" >Kontakt</p></h2> 
+                <p itemprop="streetAddress" ><strong> Adres:</strong> ul. Peowiaków 12, Lublin, 20-007</p> 
+                <p><span itemprop="addressLocality" ><strong> Miasto:</strong> Lublin</span> </p>
                 <p><strong>Godziny</strong><br />
                     Poniedziałek – Czartek:<br />
                     9:00–22:00<br />
@@ -123,7 +143,7 @@
         
       </div>
       <div class="map">
-      <h2 >On The Map</h2>
+      <h2 >Nasza lokalizacja</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9990.03302079792!2d22.5578837!3d51.2465507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb56dc073aa68a280!2sCentrum+Kultury+w+Lublinie!5e0!3m2!1spl!2spl!4v1565883632949!5m2!1spl!2spl" allowfullscreen></iframe>
     </div>       
     </div>
@@ -166,7 +186,7 @@
 
 
 
-
+      <a href="#" class="scrollup">go up</a>
 </body>
 </html>
 
