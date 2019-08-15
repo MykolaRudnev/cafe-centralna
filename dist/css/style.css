@@ -105,7 +105,7 @@
   
   .section-b {
     position: relative;
-    background: url('/dist/img/onsumer-coffee-trends-for-2018-coffee.jpg') no-repeat bottom center/cover;
+    background: url("tlocoffee.jpg") no-repeat bottom center/cover;
     height: 600px;
   }
   
